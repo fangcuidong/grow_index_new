@@ -1,0 +1,108 @@
+@import "../../common/variable";
+
+/* 大型设备（大台式电脑，1200px 起）*/
+@media (min-width:1200px) {
+
+  #header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+  }
+
+  .header-in {
+    width: 100%;
+    max-width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      height: 44px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    nav {
+      height: 100%;
+      flex-basis: 40%;
+
+      ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        li {
+          height: 60%;
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          &:hover {
+            a {
+              color: #fff;
+            }
+          }
+
+          &.active {
+            a {
+              color: #fff;
+            }
+
+            ::after {
+              content: "";
+              display: block;
+              position: absolute;
+              bottom: 0;
+              left: -10%;
+              height: 2px;
+              width: 120%;
+              background-color: #fff;
+            }
+          }
+
+          &+li {
+            margin-left: 25px;
+          }
+
+          a,
+          /*正常的未被访问过的链接*/
+          a:link,
+          /*已经访问过的链接*/
+          a:visited,
+          /*鼠标划过(停留)的链接*/
+          a:hover,
+          /* 正在点击的链接，鼠标在元素上按下还没有松开*/
+          a:active,
+          /* 获得焦点的时候 鼠标松开时显示的颜色*/
+          a:focus {
+            text-decoration: none;
+          }
+
+          a {
+            color: @primary-color;
+            font-size: 16px;
+          }
+
+          button {
+            padding: 6px 20px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            color: #fff;
+            background-color: @primary-color;
+            opacity: 0.55;
+          }
+        }
+
+      }
+    }
+  }
+
+}

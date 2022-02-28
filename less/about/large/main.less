@@ -1,0 +1,61 @@
+@import "../../common/variable.less";
+
+/* 大型设备（大台式电脑，1200px 起）*/
+@media (min-width:1200px) {
+  main {
+    #banner {
+      height: 660px;
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .my-bullet {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: #000;
+        position: relative;
+        margin: 0 6px;
+        opacity: 0.3;
+      }
+
+      .my-bullet-active {
+        background: #fff;
+        opacity: 1;
+      }
+
+      .swiper-pagination {
+        bottom: 10px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: @primary-color;
+      }
+    }
+
+    .content {
+      background: #fafdff;
+
+      height: 800px;
+
+      .box {
+        width: 1200px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

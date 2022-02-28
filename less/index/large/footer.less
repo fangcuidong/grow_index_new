@@ -1,0 +1,27 @@
+footer {
+  position: fixed;
+  bottom: 20px;
+  z-index: 999;
+  width: 100%;
+  padding-left: 55px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+
+  >div {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 26px;
+    }
+
+    span {
+      margin-left: 8px;
+    }
+
+    &+div {
+      margin-left: 100px;
+    }
+  }
+}
