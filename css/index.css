@@ -127,8 +127,45 @@ table {
   border-spacing: 0;
 }
 body {
-  background: #efefef;
+  background: #fafdff;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+.cannotselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+.title::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 51px;
+  margin-right: 25px;
+  background: #3EB370;
+}
+.title::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 51px;
+  margin-left: 25px;
+  background: #3EB370;
+}
+.text p {
+  margin: 10px 0;
+  text-indent: 33px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #666;
 }
 /* 大型设备（大台式电脑，1200px 起）*/
 @media (min-width: 1200px) {
@@ -142,7 +179,7 @@ body {
   }
   .header-in {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     height: 80px;
     margin: 0 auto;
     display: flex;
@@ -157,7 +194,6 @@ body {
   }
   .header-in nav {
     height: 100%;
-    flex-basis: 40%;
   }
   .header-in nav ul {
     height: 100%;

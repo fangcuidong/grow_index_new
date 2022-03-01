@@ -1,4 +1,52 @@
+@import "./variable.less";
+
 body {
-  background: #efefef;
+  background: @primary-background-color;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+.cannotselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+
+
+  &::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 51px;
+    margin-right: 25px;
+    background: @primary-color;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 51px;
+    margin-left: 25px;
+    background: @primary-color;
+  }
+
+}
+
+.text {
+  p {
+    margin: 10px 0;
+    text-indent: 33px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #666;
+  }
 }

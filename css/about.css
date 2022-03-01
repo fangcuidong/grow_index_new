@@ -127,8 +127,45 @@ table {
   border-spacing: 0;
 }
 body {
-  background: #efefef;
+  background: #fafdff;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+.cannotselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+.title::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 51px;
+  margin-right: 25px;
+  background: #3EB370;
+}
+.title::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 51px;
+  margin-left: 25px;
+  background: #3EB370;
+}
+.text p {
+  margin: 10px 0;
+  text-indent: 33px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #666;
 }
 /* 大型设备（大台式电脑，1200px 起）*/
 @media (min-width: 1200px) {
@@ -142,7 +179,7 @@ body {
   }
   .header-in {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     height: 80px;
     margin: 0 auto;
     display: flex;
@@ -157,7 +194,6 @@ body {
   }
   .header-in nav {
     height: 100%;
-    flex-basis: 40%;
   }
   .header-in nav ul {
     height: 100%;
@@ -249,12 +285,125 @@ body {
   main #banner .swiper-button-prev {
     color: #3EB370;
   }
-  main .content {
+  main .container {
     background: #fafdff;
-    height: 800px;
   }
-  main .content .box {
-    width: 1200px;
+  main .container .content {
+    max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
+  }
+  main .container .content .about-grow {
+    padding: 50px 110px 30px 110px;
+    background: #fff;
+    box-shadow: 0px 16px 30px 1px rgba(187, 187, 187, 0.10196078);
+  }
+  main .container .content .about-grow .title {
+    margin: 30px 0;
+  }
+  main .container .content .grow-culture {
+    margin-top: 80px;
+  }
+  main .container .content .grow-culture .title {
+    margin-bottom: 40px;
+  }
+  main .container .content .grow-culture .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .container .content .grow-culture .flex .flex-item {
+    width: 285px;
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 16px 30px 1px rgba(187, 187, 187, 0.10196078);
+  }
+  main .container .content .grow-culture .flex .flex-item img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+  }
+  main .container .content .grow-culture .flex .flex-item p {
+    margin: 0 30px;
+    text-align: center;
+    color: #666;
+    line-height: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .container .content .grow-culture .flex .flex-item > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 120px;
+    background: #3EB370;
+    line-height: 120px;
+    text-align: center;
+    color: #fff;
+  }
+  main .container .content .grow-photo .title {
+    margin: 80px 0 40px 0;
+  }
+  main .container .content .grow-photo .photo-container {
+    display: flex;
+    height: 380px;
+  }
+  main .container .content .grow-photo .photo-container + .photo-container {
+    margin-top: 20px;
+  }
+  main .container .content .grow-photo .photo-container img {
+    width: calc(50% - 9px);
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+  }
+  main .container .content .grow-photo .photo-container img + img {
+    margin-left: 18px;
+  }
+  main .container .content .grow-addr {
+    padding-bottom: 160px;
+    box-shadow: 0px 16px 30px 1px rgba(243, 243, 243, 0.2);
+  }
+  main .container .content .grow-addr .title {
+    margin: 80px 0 40px 0;
+  }
+  main .container .content .grow-addr .map {
+    position: relative;
+  }
+  main .container .content .grow-addr .map img {
+    width: 100%;
+  }
+  main .container .content .grow-addr .map .addr {
+    position: absolute;
+    left: 257px;
+    top: 210px;
+    width: 359px;
+    height: 215px;
+    padding: 38px 50px;
+    background: #fff;
+    box-shadow: 0px 16px 30px 1px rgba(187, 187, 187, 0.1);
+    box-sizing: border-box;
+  }
+  main .container .content .grow-addr .map .addr > div {
+    margin-bottom: 26px;
+    color: #333;
+    font-size: 28px;
+  }
+  main .container .content .grow-addr .map .addr > p {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #666;
+  }
+  footer {
+    height: 94px;
+    line-height: 94px;
+    background: #fff;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.16078431);
+    text-align: center;
+    color: #666;
+    font-size: 16px;
   }
 }
