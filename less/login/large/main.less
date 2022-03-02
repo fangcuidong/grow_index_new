@@ -124,6 +124,7 @@ main {
               background: #fabe00;
               color: #fff;
               text-align: center;
+              font-size: 16px;
 
               &:hover {
                 background: #eeb702;
@@ -145,6 +146,26 @@ main {
         }
       }
     }
+  }
+
+  input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #ddd;
+  }
+
+  input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ddd;
+  }
+
+  input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ddd;
+  }
+
+  input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #ddd;
   }
 }
 

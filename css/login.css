@@ -254,6 +254,7 @@ body {
   color: #fff;
   background-color: #3EB370;
   opacity: 0.55;
+  font-size: 16px;
 }
 /* 大型设备（大台式电脑，1200px 起）*/
 main {
@@ -363,6 +364,7 @@ main .login .form .box .account-tab .flex .log-btn {
   background: #fabe00;
   color: #fff;
   text-align: center;
+  font-size: 16px;
 }
 main .login .form .box .account-tab .flex .log-btn:hover {
   background: #eeb702;
@@ -376,4 +378,20 @@ main .login .form .box .account-tab .flex .download {
 }
 main .login .form .box .account-tab .flex .download > span {
   margin-left: 5px;
+}
+main input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ddd;
+}
+main input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ddd;
+}
+main input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ddd;
+}
+main input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #ddd;
 }

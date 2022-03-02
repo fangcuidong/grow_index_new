@@ -254,6 +254,7 @@ body {
   color: #fff;
   background-color: #3EB370;
   opacity: 0.55;
+  font-size: 16px;
 }
 /* 大型设备（大台式电脑，1200px 起）*/
 main #banner {
