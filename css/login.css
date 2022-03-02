@@ -168,97 +168,95 @@ body {
   color: #666;
 }
 /* 大型设备（大台式电脑，1200px 起）*/
-@media (min-width: 1200px) {
-  #header {
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    height: 80px;
-    background: transparent;
-  }
-  .header-in {
-    width: 100%;
-    max-width: 1200px;
-    height: 80px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header-in .logo {
-    height: 44px;
-  }
-  .header-in .logo img {
-    height: 100%;
-  }
-  .header-in nav {
-    height: 100%;
-  }
-  .header-in nav ul {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .header-in nav ul li {
-    height: 60%;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  .header-in nav ul li:hover a {
-    color: #fff;
-  }
-  .header-in nav ul li.active a {
-    color: #fff;
-  }
-  .header-in nav ul li.active ::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: -10%;
-    height: 2px;
-    width: 120%;
-    background-color: #fff;
-  }
-  .header-in nav ul li + li {
-    margin-left: 25px;
-  }
-  .header-in nav ul li a,
-  .header-in nav ul li a:link,
-  .header-in nav ul li a:visited,
-  .header-in nav ul li a:hover,
-  .header-in nav ul li a:active,
-  .header-in nav ul li a:focus {
-    text-decoration: none;
-  }
-  .header-in nav ul li a {
-    color: #3EB370;
-    font-size: 16px;
-  }
-  .header-in nav ul li button {
-    padding: 6px 20px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #3EB370;
-    opacity: 0.55;
-  }
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+}
+.header-in {
+  width: 100%;
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-in .logo {
+  height: 44px;
+}
+.header-in .logo img {
+  height: 100%;
+}
+.header-in nav {
+  height: 100%;
+}
+.header-in nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-in nav ul li {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-in nav ul li:hover a {
+  color: #fff;
+}
+.header-in nav ul li.active a {
+  color: #fff;
+}
+.header-in nav ul li.active ::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  height: 2px;
+  width: 120%;
+  background-color: #fff;
+}
+.header-in nav ul li + li {
+  margin-left: 25px;
+}
+.header-in nav ul li a,
+.header-in nav ul li a:link,
+.header-in nav ul li a:visited,
+.header-in nav ul li a:hover,
+.header-in nav ul li a:active,
+.header-in nav ul li a:focus {
+  text-decoration: none;
+}
+.header-in nav ul li a {
+  color: #3EB370;
+  font-size: 16px;
+}
+.header-in nav ul li button {
+  padding: 6px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #3EB370;
+  opacity: 0.55;
 }
 /* 大型设备（大台式电脑，1200px 起）*/
-@media (min-width: 1200px) {
-  main {
-    width: 100vw;
-    height: 100vh;
-  }
-  main .login {
-    width: 100%;
-    height: 100%;
-  }
-  main .login img {
-    width: 100%;
-    height: 100%;
-  }
+main {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}
+main .login {
+  width: 100%;
+  height: 100%;
+}
+main .login img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
