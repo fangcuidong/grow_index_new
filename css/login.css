@@ -167,6 +167,16 @@ body {
   font-size: 16px;
   color: #666;
 }
+.pointer {
+  cursor: pointer;
+}
+.cannotselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /* 大型设备（大台式电脑，1200px 起）*/
 #header {
   position: fixed;
@@ -254,9 +264,116 @@ main {
 main .login {
   width: 100%;
   height: 100%;
+  min-width: 1200px;
+  position: relative;
 }
-main .login img {
+main .login > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+main .login .form {
+  width: 250px;
+  margin: 0 auto;
+  position: absolute;
+  top: 166px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+main .login .form .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .login .form .logo > img {
+  width: 85%;
+}
+main .login .form .logo > h2 {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+main .login .form .box {
+  margin-top: 50px;
+}
+main .login .form .box .login-way {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  color: #fff;
+}
+main .login .form .box .login-way > .active {
+  color: #fabe00;
+}
+main .login .form .box .account-tab {
+  margin-top: 20px;
+}
+main .login .form .box .account-tab .row {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0px 16px 30px 1px rgba(187, 187, 187, 0.1);
+}
+main .login .form .box .account-tab .row + .row {
+  margin-top: 15px;
+}
+main .login .form .box .account-tab .row > img {
+  width: 16px;
+  margin-right: 8px;
+}
+main .login .form .box .account-tab .row > input {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  flex: 1;
+  width: 100%;
+}
+main .login .form .box .account-tab .flex {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .login .form .box .account-tab .flex > div {
+  width: 45%;
+}
+main .login .form .box .account-tab .flex > div + div {
+  margin-left: 10px;
+}
+main .login .form .box .account-tab .flex .captcha {
+  height: 38px;
+  line-height: 38px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+main .login .form .box .account-tab .flex .log-btn {
+  width: 45%;
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  background: #fabe00;
+  color: #fff;
+  text-align: center;
+}
+main .login .form .box .account-tab .flex .log-btn:hover {
+  background: #eeb702;
+}
+main .login .form .box .account-tab .flex .download {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+}
+main .login .form .box .account-tab .flex .download > span {
+  margin-left: 5px;
 }

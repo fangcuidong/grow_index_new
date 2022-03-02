@@ -167,6 +167,16 @@ body {
   font-size: 16px;
   color: #666;
 }
+.pointer {
+  cursor: pointer;
+}
+.cannotselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /* 大型设备（大台式电脑，1200px 起）*/
 #header {
   position: fixed;
@@ -361,37 +371,23 @@ main .container .content .grow-photo .photo-container img + img {
   margin-left: 18px;
 }
 main .container .content .grow-addr {
-  padding-bottom: 160px;
+  padding-bottom: 20px;
   box-shadow: 0px 16px 30px 1px rgba(243, 243, 243, 0.2);
 }
 main .container .content .grow-addr .title {
   margin: 80px 0 40px 0;
 }
-main .container .content .grow-addr .map {
-  position: relative;
+main .container .content .grow-addr .addr {
+  margin: 38px 0;
 }
-main .container .content .grow-addr .map img {
-  width: 100%;
-}
-main .container .content .grow-addr .map .addr {
-  position: absolute;
-  left: 257px;
-  top: 210px;
-  width: 359px;
-  height: 215px;
-  padding: 38px 50px;
-  background: #fff;
-  box-shadow: 0px 16px 30px 1px rgba(187, 187, 187, 0.1);
-  box-sizing: border-box;
-}
-main .container .content .grow-addr .map .addr > div {
-  margin-bottom: 26px;
+main .container .content .grow-addr .addr > div {
+  margin-bottom: 20px;
   color: #333;
-  font-size: 28px;
+  font-size: 24px;
 }
-main .container .content .grow-addr .map .addr > p {
-  margin-bottom: 12px;
-  font-size: 18px;
+main .container .content .grow-addr .addr > p {
+  margin-bottom: 10px;
+  font-size: 16px;
   color: #666;
 }
 footer {

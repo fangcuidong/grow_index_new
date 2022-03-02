@@ -167,6 +167,16 @@ body {
   font-size: 16px;
   color: #666;
 }
+.pointer {
+  cursor: pointer;
+}
+.cannotselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /* 大型设备（大台式电脑，1200px 起）*/
 #header {
   position: fixed;

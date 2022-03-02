@@ -6,10 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>格悦新能源</title>
-  <meta name="format-detection" content="telephone=no">
-  <meta name="格悦" content="格悦">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
+  <meta name="格悦新能源" content="格悦新能源">
+  <meta name="keywords" content="格悦新能源" />
+  <meta name="description" content="格悦新能源 绿色出行 科技服务" />
   <meta name="viewport"
     content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
   <link rel="shortcut icon" href="./images/common/favicon.ico">
@@ -40,11 +39,75 @@
 
   <main>
     <div class="login">
-      <img src="./images/login/bg.png" alt="">
+      <img src="./images/login/bg.jpg" alt="">
+      <div class="form">
+        <div class="logo">
+          <img src="./images/login/logo.png" alt="grow">
+          <h2>格悦新能源·管理系统</h2>
+        </div>
+        <div class="box">
+          <div class="login-way">
+            <div class="qrcode pointer">扫码登录</div>
+            <div class="account active pointer">账号登录</div>
+          </div>
+          <!-- <div class="qrcode-tab">
 
+          </div> -->
+          <div class="account-tab">
+            <div class="row">
+              <img src="./images/login/icon_1.png" alt="">
+              <input type="text" id="phone" placeholder="请输入手机号">
+            </div>
+            <div class="row">
+              <img src="./images/login/icon_2.png" alt="">
+              <input type="password" id="password" placeholder="请输入密码">
+            </div>
+            <div class="flex">
+              <div class="row">
+                <input type="text" placeholder="请输入验证码">
+              </div>
+              <div class="captcha cannotselect" id="captcha" onclick="getRandomCaptcha()"></div>
+            </div>
+            <div class="flex">
+              <button class="log-btn pointer">登 &nbsp;&nbsp;&nbsp; 录</button>
+              <div class="download pointer">
+                <img src="./images/login/icon_phone.png" alt="">
+                <span>下载手机版</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </main>
 
 </body>
+
+<!-- 随机验证码 -->
+<script>
+  window.onload = getRandomCaptcha();
+
+  function getRandomCaptcha() {
+    const captcha = document.getElementById('captcha');
+    var random = randomWord(true, 4, 4);
+    captcha.innerText = random;
+  }
+
+  function randomWord(randomFlag, min, max) {
+    var str = "",
+      range = min,
+      arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    // 随机产生
+    if (randomFlag) {
+      range = Math.round(Math.random() * (max - min)) + min;
+    }
+    for (var i = 0; i < range; i++) {
+      pos = Math.round(Math.random() * (arr.length - 1));
+      str += arr[pos];
+    }
+    return str;
+  }
+</script>
 
 </html>

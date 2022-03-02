@@ -167,6 +167,16 @@ body {
   font-size: 16px;
   color: #666;
 }
+.pointer {
+  cursor: pointer;
+}
+.cannotselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /* 大型设备（大台式电脑，1200px 起）*/
 #header {
   position: fixed;
@@ -281,6 +291,7 @@ main .container .content .trend .flex-box {
 }
 main .container .content .trend .flex-box .flex-item {
   width: 320px;
+  height: 460px;
   background: #fff;
   box-shadow: 0px 16px 30px 1px rgba(187, 187, 187, 0.10196078);
 }

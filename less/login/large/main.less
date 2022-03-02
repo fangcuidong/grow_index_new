@@ -10,11 +10,140 @@ main {
   .login {
     width: 100%;
     height: 100%;
+    min-width: 1200px;
+    position: relative;
 
-    img {
+    >img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+
+    .form {
+      width: 250px;
+      margin: 0 auto;
+      position: absolute;
+      top: 166px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >img {
+          width: 85%;
+        }
+
+        >h2 {
+          margin-top: 12px;
+          font-size: 20px;
+          color: #fff;
+          letter-spacing: 2px;
+        }
+      }
+
+      .box {
+        margin-top: 50px;
+
+        .login-way {
+          display: flex;
+          justify-content: space-around;
+          margin: 10px 0;
+          color: #fff;
+
+          >.active {
+            color: #fabe00;
+          }
+        }
+
+        .qrcode {}
+
+        .account-tab {
+          margin-top: 20px;
+
+          .row {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            padding: 4px 6px;
+            border-radius: 3px;
+            background: #fff;
+            box-shadow: 0px 16px 30px 1px rgb(187 187 187 / 10%);
+
+            &+.row {
+              margin-top: 15px;
+            }
+
+            >img {
+              width: 16px;
+              margin-right: 8px;
+            }
+
+            >input {
+              outline: none;
+              border: none;
+              font-size: 14px;
+              flex: 1;
+              width: 100%;
+            }
+          }
+
+          .flex {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            >div {
+              width: 45%;
+
+              &+div {
+                margin-left: 10px;
+              }
+            }
+
+            .captcha {
+              height: 38px;
+              line-height: 38px;
+              border-radius: 3px;
+              background: rgba(255, 255, 255, 0.3);
+              color: #fff;
+              text-align: center;
+              font-style: italic;
+              letter-spacing: 1px;
+            }
+
+            .log-btn {
+              width: 45%;
+              height: 38px;
+              border: none;
+              border-radius: 3px;
+              background: #fabe00;
+              color: #fff;
+              text-align: center;
+
+              &:hover {
+                background: #eeb702;
+              }
+            }
+
+            .download {
+              height: 38px;
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              color: #fff;
+
+              >span {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
