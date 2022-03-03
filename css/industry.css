@@ -303,7 +303,7 @@ main .container .content .trend .flex-box .flex-item .top {
   padding: 18px 55px;
   background: #3EB370;
   text-align: center;
-  font-size: 19px;
+  font-size: 18px;
   color: #fff;
   line-height: 22px;
   box-sizing: border-box;
@@ -316,7 +316,7 @@ main .container .content .trend .flex-box .flex-item:nth-child(3) .top {
 }
 main .container .content .trend .flex-box .flex-item .paragraph {
   margin: 0 25px;
-  color: #999;
+  color: #333;
 }
 main .container .content .trend .flex-box .flex-item .paragraph p {
   word-break: break-all;

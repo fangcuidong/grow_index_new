@@ -381,6 +381,7 @@ main .container .content .grow-addr .title {
 }
 main .container .content .grow-addr .addr {
   margin: 38px 0;
+  text-align: center;
 }
 main .container .content .grow-addr .addr > div {
   margin-bottom: 20px;
