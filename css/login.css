@@ -257,6 +257,22 @@ body {
   opacity: 0.55;
   font-size: 16px;
 }
+#header.bg {
+  background: #3EB370 !important;
+  transition: 0.3s;
+}
+#header.bg a {
+  color: #16723D !important;
+}
+#header.bg li:hover a {
+  color: #fff !important;
+}
+#header.bg .active a {
+  color: #fff !important;
+}
+#header.bg button {
+  background: #16723D !important;
+}
 /* 大型设备（大台式电脑，1200px 起）*/
 main {
   width: 100vw;
@@ -395,4 +411,7 @@ main input::-moz-placeholder {
 main input:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #ddd;
+}
+#header button {
+  opacity: 1 !important;
 }

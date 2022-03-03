@@ -161,20 +161,22 @@
     });
   </script>
 
-  <!-- 窗口滚动到一定高度时，隐藏头部 -->
+  <!-- 窗口滚动到一定高度时，替换头部样式 -->
   <script>
     window.onscroll = function () {
       const top = document.documentElement.scrollTop;
       const header = document.getElementById('header');
       if (top > 500) {
-        const opacity = 1 - (top - 500) / 100;
-        header.style.opacity = opacity;
-        if (opacity >= 0) {
-          header.style.display = 'block';
-        }
+        // const opacity = 1 - (top - 500) / 100;
+        // header.style.opacity = opacity;
+        // if (opacity >= 0) {
+        //   header.style.display = 'block';
+        // }
+        document.getElementById('header').classList.add('bg');
       } else {
-        header.style.display = 'block';
-        header.style.opacity = 1;
+        // header.style.display = 'block';
+        // header.style.opacity = 1;
+        document.getElementById('header').classList.remove('bg');
       }
     }
   </script>

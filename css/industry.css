@@ -257,22 +257,34 @@ body {
   opacity: 0.55;
   font-size: 16px;
 }
-/* 大型设备（大台式电脑，1200px 起）*/
-#header {
+#header.bg {
   background: #3EB370 !important;
-  position: relative;
+  transition: 0.3s;
 }
-#header a {
+#header.bg a {
   color: #16723D !important;
 }
-#header li:hover a {
+#header.bg li:hover a {
   color: #fff !important;
 }
-#header .active a {
+#header.bg .active a {
   color: #fff !important;
 }
-#header button {
+#header.bg button {
   background: #16723D !important;
+}
+footer {
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+/* 大型设备（大台式电脑，1200px 起）*/
+main {
+  padding-top: 80px;
 }
 main .container {
   background: #fafdff;
@@ -316,7 +328,7 @@ main .container .content .trend .flex-box .flex-item:nth-child(3) .top {
 }
 main .container .content .trend .flex-box .flex-item .paragraph {
   margin: 0 25px;
-  color: #333;
+  color: #666;
 }
 main .container .content .trend .flex-box .flex-item .paragraph p {
   word-break: break-all;
@@ -416,13 +428,4 @@ main .container .content .resolve > div.flex .desc .paragraph {
   color: #666;
   line-height: 28px;
   letter-spacing: 1px;
-}
-footer {
-  height: 94px;
-  line-height: 94px;
-  background: #fff;
-  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.16078431);
-  text-align: center;
-  color: #666;
-  font-size: 16px;
 }
